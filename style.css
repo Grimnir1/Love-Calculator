@@ -1,0 +1,55 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body{
+  background-image: url('YggdrasilTree.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.main{
+  width: 30%;
+  backdrop-filter: blur(15px);
+
+}
+p{
+  font-size: large;
+}
+.pic{
+  width: 20%;
+}
+#img{
+  display: inline-block;
+  width: 200px;
+}
+#showInner {
+  display: grid;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px){
+  body{
+      background-image: url('Sky.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+  }
+  .main{
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    justify-content: center;
+    align-items: center;
+
+  }
+  .inp{
+      width: 75%;
+  }
+  .pic{
+      width: 40%;
+  }
+}
